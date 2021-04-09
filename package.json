@@ -1,0 +1,19 @@
+{
+  "name": "smarkioteste",
+  "version": "1.0.0",
+  "description": "Aplicação desenvolvida para criação, leitura e escuta de comentários",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreMarcos/SmarkioTeste.git"
+  },
+  "author": "André Marcos Ferreira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AndreMarcos/SmarkioTeste/issues"
+  },
+  "homepage": "https://github.com/AndreMarcos/SmarkioTeste#readme"
+}
