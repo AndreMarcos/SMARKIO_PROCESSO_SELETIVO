@@ -5,30 +5,40 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 
-<body>
-    <div class="row">
-        <div class="col-md-6">
-            <!-- Caixa para comentário -->
-            <div class="col-md-5">
-                <h3>Comentário</h3>
-                <br>
-                <textarea class="form-control center" rows="3" cols="10"></textarea>
-                <br>
-                <button class="form-control col-md-3">Cadastrar</button>
-            </div>
+<body style="background-color: aliceblue">
+    <div class="col-md-6" style="width: 50%;background-color:aliceblue; height: 100%">
+        <!-- Caixa para comentário -->
+        <div class="col-md-5" style="margin-left: 400px;margin-top: 200px;">
+            <h3 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Comentário</h3>
+            <br>
+            <textarea class="form-control center" rows="3" cols="10" style="height: 200px" id="textocomentario"></textarea>
+            <br>
+            <button class="btn-primary form-control col-md-3" id='bt' onclick="bt();">Cadastrar</button>
         </div>
-        <div class="col-md-6">
-            <!-- Comentários -->
-            <h3>Comentários</h3>
+        <hr style="width:2;size:100">
+    </div>
+    <div class="col-md-6" style="background-color: gainsboro; width: 50%; height: 100%;">
+        <!-- Comentários -->
+        <div style="margin-top: 200px; margin-left: 150px;">
+            <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Comentários</h3>
             <br><br>
             <div class="col-md-4">
                 <p>Comentário 1</p>
             </div>
             <div class="col-md-1">
-                <button>Ouvir</button>
+                <button class="btn btn-primary">Ouvir</button>
             </div>
         </div>
     </div>
+    <script>
+        function bt() {
+            var textocomentario = document.getElementById('textocomentario').value;
+            con.query('SELECT * FROM comentarios', (err, rows) => {
+                if (err) throw err
+                alert('Comentário:', rows, '\n');
+            });
+        }
+    </script>
 </body>
 
 </html>
