@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/AndreMarcos/SmarkioTeste/issues"
   },
-  "homepage": "https://github.com/AndreMarcos/SmarkioTeste#readme"
+  "homepage": "https://github.com/AndreMarcos/SmarkioTeste#readme",
+  "dependencies": {
+    "http": "0.0.1-security"
+  }
 }
